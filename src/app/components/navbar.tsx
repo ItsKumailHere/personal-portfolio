@@ -1,12 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  FaHome,
-  FaFolder,
-  FaBriefcase,
-  FaTools,
-  FaPencilAlt,
-} from "react-icons/fa";
+import { FaHome, FaFolder, FaPencilAlt } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -17,8 +11,6 @@ export default function Navbar() {
           {[
             { icon: <FaHome />, label: "" },
             { icon: <FaFolder />, label: "about" },
-            // { icon: <FaBriefcase />, label: "Work" },
-            //   { icon: <FaTools />, label: "Tools" },
             { icon: <FaPencilAlt />, label: "contact" },
           ].map((item) => (
             <motion.li

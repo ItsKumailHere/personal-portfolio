@@ -16,15 +16,7 @@ export default function ProfileCard() {
         className="bg-white rounded-3xl p-6 sticky top-0 overflow-hidden"
       >
         <div className="sticky top-0 w-full h-64 mb-4 bg-[#FF5733] rounded-2xl overflow-hidden">
-          <Image
-            src={img}
-            alt="Kumail Ali"
-            // width={100}
-            // height={700}
-            layout="fill"
-            // objectFit="cover"
-            // className="mix-blend-luminosity"
-          />
+          <Image src={img} alt="Kumail Ali" layout="fill" />
         </div>
         <h2 className="text-black text-3xl font-bold mb-2">KUMAIL ALI</h2>
         <div className="w-12 h-12 bg-[#FF5733] rounded-full mb-4"></div>

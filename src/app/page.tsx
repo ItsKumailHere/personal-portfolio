@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { SiFramer, SiFigma, SiWordpress, SiReact } from "react-icons/si";
+import { SiFramer, SiWordpress, SiReact } from "react-icons/si";
 import Navbar from "./components/navbar";
 import ProfileCard from "./components/profileCard";
 import Link from "next/link";
@@ -13,14 +12,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black text-white p-6">
-      {/* Navigation */}
       <Navbar />
 
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[400px,1fr] gap-0">
-        {/* Profile Card */}
         <ProfileCard />
 
-        {/* Main Content */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -36,7 +32,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mb-12">
             {[
               { number: "+1", text: "YEARS OF EXPERIENCE" },
@@ -54,7 +49,6 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Skill Cards */}
           <div className=" font-semibold mb-10 text-5xl">
             <h3 className="text-gray-600">RECENT</h3>
             <h3>PROJECTS</h3>
@@ -92,8 +86,7 @@ export default function Home() {
               >
                 <div className="relative z-10">
                   <div className="flex space-x-2 mb-4">
-                    {/* {/* <SiFigma className="text-3xl" /> */}
-                    // <SiWordpress className="text-3xl" />
+                    <SiWordpress className="text-3xl" />
                     <SiReact className="text-3xl" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">

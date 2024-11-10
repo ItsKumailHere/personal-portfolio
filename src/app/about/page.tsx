@@ -30,7 +30,11 @@ export default function About() {
                 "Student Of GIAIC",
                 "Open For Small Projects",
               ].map((item) => (
-                <p className="flex justify-center items-center rounded-full font-semibold py-3 bg-gray-500 px-3">
+                <p
+                  className="flex justify-center items-center rounded-full font-semibold py-3 bg-gray-500 px-3
+                "
+                  key={item}
+                >
                   {item}
                 </p>
               ))}
