@@ -30,12 +30,13 @@ export default function Contact() {
     <div className="p-6">
       <Navbar />
       <div className="h-full flex flex-col justify-center gap-5 items-center border border-solid  py-8">
-        <h1 className="text-5xl font-medium">Let's Work Togehther!</h1>
+        <h1 className="text-5xl font-medium">Let&#39;s Work Togehther!</h1>
         <div className="flex gap-5">
-          {socials.map((item) => {
+          {socials.map((item, index) => {
             return (
               <h2
                 className={`hover:${item.hover} color-slate-600 cursor-pointer`}
+                key={index}
               >
                 {item.icon}
               </h2>
